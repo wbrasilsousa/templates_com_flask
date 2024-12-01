@@ -1,0 +1,4 @@
+templates_com_falsk_venv/
+
+__pycache__/
+*.py[cod]

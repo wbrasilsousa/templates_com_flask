@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title>{% block title %}Minha Página Flask{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+</head>
+    
+<body>
+    <h2>Bem vindo</h2>
+    <h4>Flask: Renderizando Templates</h4>
+
+    <a href="{{ url_for('index') }}">Index</a>
+    <a href="{{ url_for('welcome', name='Wildney') }}">Bem vindo</a>
+    
+    <!-- esta seção pode ser substituída por um documento filho --> 
+    {% block content %}
+    
+        <p>Aplicação Flask</p>
+    
+    {% endblock %}
+    
+</body>
+    
+</html>
